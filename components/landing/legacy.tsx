@@ -62,7 +62,7 @@ export default function Legacy() {
                     </div>
 
 
-                    <div className="relative h-64 md:h-auto border-b-2 md:border-b-0 md:border-r-2 border-dashed border-gray-400 order-last md:order-none">
+                    <div className="relative h-64 md:h-auto border-b-2 md:border-b-0 md:border-r-2 border-dashed border-gray-400 order-last md:order-0">
                         <img
                             src="/circle.jpg" 
                             alt="Children in circle time"
