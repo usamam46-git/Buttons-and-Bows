@@ -1,5 +1,6 @@
 'use client'
 
+import Achievements from '@/components/landing/acheivements'
 import Gallery from '@/components/landing/gallery'
 import Hero from '@/components/landing/hero'
 import History from '@/components/landing/history'
@@ -14,6 +15,7 @@ const home = () => {
      <Programs />
      <History />
      <Legacy />
+     <Achievements />
      <Gallery />
     </>
   )
