@@ -2,29 +2,12 @@
 
 import React from 'react';
 import { Award, Star, MapPin } from 'lucide-react';
+import { achievements } from '@/app/constants/assets';
 
 const Achievements = () => {
-  const achievements = [
-    {
-      icon: Award,
-      title: 'Recognized by the Puyallup',
-      subtitle: 'School District & MDA'
-    },
-    {
-      icon: Star,
-      title: '5-Star Rated by Local',
-      subtitle: 'Families'
-    },
-    {
-      icon: MapPin,
-      title: 'Located on South Hill,',
-      subtitle: 'Puyallup - Still'
-    }
-  ];
 
   return (
     <div className="w-full py-20 px-4 relative overflow-hidden" style={{ backgroundColor: '#518C5E' }}>
-      {/* Background SVG Lines */}
       <svg
         className="absolute inset-0 w-full h-full opacity-20"
         xmlns="http://www.w3.org/2000/svg"

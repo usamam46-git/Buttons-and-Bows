@@ -19,7 +19,7 @@ export default function History() {
 
       <div className="relative z-10 max-w-2xl mx-auto text-center flex flex-col items-center">
         
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 font-serif">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#518C5E] mb-8 font-serif">
           A Barn, A Vision, A Legacy
         </h2>
         <div className="space-y-6 text-gray-600 leading-relaxed text-sm md:text-[15px]">

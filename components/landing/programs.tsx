@@ -1,32 +1,8 @@
 import React from "react";
 import { Puzzle, Music, BookOpen, ArrowRight } from "lucide-react";
+import { programsData } from "@/app/constants/assets";
 
-const programsData = [
-  {
-    title: "Preschool Program",
-    subtitle: "(Ages 3 - 5)",
-    description:
-      "Building confidence through play-based academics and social-emotional support.",
-    icon: Puzzle,
-    theme: "orange",
-  },
-  {
-    title: "Music & STEM Integration",
-    subtitle: "",
-    description:
-      "Where hands-on learning meets rhythm and curiosity.",
-    icon: Music,
-    theme: "green",
-  },
-  {
-    title: "Faith-Inspired Learning",
-    subtitle: "",
-    description:
-      "Guided by purpose, compassion, and community values.",
-    icon: BookOpen,
-    theme: "orange",
-  },
-];
+
 
 export default function Programs() {
   const greenHex = "#518C5E";
