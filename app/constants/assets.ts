@@ -1,6 +1,24 @@
 import { Award, Star, MapPin, Shield, Sparkles } from 'lucide-react';
 import { Puzzle, Music, BookOpen, GraduationCap, ArrowRight } from "lucide-react";
 
+export const navItems = [
+  { label: "Home", href: "#" },
+  { label: "About Us", href: "#" },
+  {
+    label: "Curriculum",
+    items: ["Toddlers", "Preschool", "Pre-K"]
+  },
+  {
+    label: "Preschool Program",
+    items: ["Program Overview", "Daily Schedule", "Classrooms"]
+  },
+  {
+    label: "Parent Resources",
+    items: ["Handbook", "Events", "Forms"]
+  },
+  { label: "Contact Us", href: "#" }
+];
+
 export const address = {
   title: "Address",
   lines: ["8622 11th St E Puyallup, WA 98373"],

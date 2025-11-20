@@ -17,9 +17,6 @@ export default function Footer() {
                             height={80}
                             className="object-contain"
                         />
-                        {/* <h2 className="text-xl font-semibold leading-tight">
-                            Buttons & Bows <br /> Preschool
-                        </h2> */}
                     </div>
                 </div>
                 <div className="space-y-6 text-sm">
