@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Menu, Phone, Clock, MapPin, ChevronDown } from "lucide-react";
 import {
     DropdownMenu,
@@ -11,6 +11,12 @@ import { navItems } from "@/app/constants/assets";
 import Link from "next/link";
 
 export default function Navbar() {
+
+    const sectionRef = useRef<HTMLElement>(null);
+
+    const scrollToSection = () => {
+        sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
     const [open, setOpen] = useState(false);
 
 
@@ -50,7 +56,7 @@ export default function Navbar() {
                         Schedule a Tour
                     </Button>
                 </div>
-                <button className="md:hidden" onClick={() => setOpen(!open)}>
+                <button className="md:hidden" onClick={() => { setOpen(!open); scrollToSection(); }}>
                     <Menu size={28} />
                 </button>
             </div>
