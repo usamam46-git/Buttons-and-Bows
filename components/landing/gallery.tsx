@@ -89,7 +89,7 @@ const Gallery = () => {
                 return (
                   <div
                     key={colIndex}
-                    ref={(el) => (imagesRef.current[currentIndex] = el)}
+                    ref={(el) => {(imagesRef.current[currentIndex] = el)}}
                     className="relative group cursor-pointer"
                     style={{
                       flex: `0 0 ${width}%`,
