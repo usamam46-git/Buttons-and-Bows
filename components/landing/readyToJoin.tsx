@@ -60,7 +60,7 @@ const ButtonsAndBowsBanner = () => {
   const imageUrl = '/class.jpg';
 
   return (
-    <div className="relative w-full overflow-hidden h-[600px] md:h-[650px]">
+    <div className="relative w-full overflow-hidden h-[700px] md:h-[650px]">
       <div className="absolute inset-0 w-full h-full">
         <Image
           src={imageUrl}
