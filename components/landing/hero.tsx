@@ -14,7 +14,7 @@ export default function Hero() {
   const pRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
-  const circleRefs = useRef<(HTMLElement | null)[]>([]);
+  const circleRefs = useRef<HTMLDivElement[]>([]);
   const iconRefs = useRef<(SVGSVGElement | null)[]>([]);
 
   useEffect(() => {
@@ -123,8 +123,8 @@ export default function Hero() {
 
           <div className="mt-8 flex items-center gap-4 text-gray-600">
             <span>Trusted by:</span>
-            <FcGoogle ref={(el) => (iconRefs.current[0] = el)} className="w-6 h-6" />
-            <FaFacebook ref={(el) => (iconRefs.current[1] = el)} className="w-6 h-6" />
+            <FcGoogle className="w-6 h-6" />
+            <FaFacebook className="w-6 h-6" />
             <img src="/logo.jpg" className="w-[160px] mix-blend-multiply" />
           </div>
         </div>
@@ -135,11 +135,11 @@ export default function Hero() {
             alt="child"
             className="relative z-10 w-[330px] h-[330px] object-cover rounded-full shadow-lg"
           />
-          <div ref={(el) => (circleRefs.current[0] = el)} className="absolute w-64 h-64 bg-orange-300 rounded-full -right-10 top-10 opacity-60"></div>
-          <div ref={(el) => (circleRefs.current[1] = el)} className="absolute w-52 h-52 bg-green-700 rounded-full -bottom-6 right-16 opacity-70"></div>
-          <div ref={(el) => (circleRefs.current[2] = el)} className="absolute w-50 h-50 border-2 border-dotted border-gray-300 rounded-full -top-6 left-4"></div>
-          <div ref={(el) => (circleRefs.current[3] = el)} className="absolute w-20 h-20 border-2 border-dotted border-gray-300 rounded-full bottom-4 left-2"></div>
-          <div ref={(el) => (circleRefs.current[4] = el)} className="absolute w-20 h-20 border-2 border-dotted border-gray-300 rounded-full bottom-4 left-2"></div>
+          <div className="absolute w-64 h-64 bg-orange-300 rounded-full -right-10 top-10 opacity-60"></div>
+          <div className="absolute w-52 h-52 bg-green-700 rounded-full -bottom-6 right-16 opacity-70"></div>
+          <div className="absolute w-50 h-50 border-2 border-dotted border-gray-300 rounded-full -top-6 left-4"></div>
+          <div className="absolute w-20 h-20 border-2 border-dotted border-gray-300 rounded-full bottom-4 left-2"></div>
+          <div className="absolute w-20 h-20 border-2 border-dotted border-gray-300 rounded-full bottom-4 left-2"></div>
         </div>
       </div>
     </section>
