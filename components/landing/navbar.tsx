@@ -16,15 +16,15 @@ export default function Navbar() {
 
 
     return (
-        <nav className="w-full shadow-sm bg-[#FEFBEA]">
+        <nav className="w-full border-b border-dashed border-[#F97316] shadow-sm bg-[#FEFBEA]">
             <div className="flex justify-end">
-                <div className="hidden w-[70%] rounded-l-2xl md:flex justify-end gap-8 bg-[#4A7D56] text-white py-2 px-6 text-sm">
+                <div className="hidden w-[70%] rounded-bl-2xl md:flex justify-end gap-8 bg-[#4A7D56] text-white py-2 px-6 text-sm">
                     <div className="flex items-center gap-2"><Phone size={16} /> (253) 845-2511</div>
                     <div className="flex items-center gap-2"><Clock size={16} /> Weekdays: 8 AM – 4 PM</div>
                     <div className="flex items-center gap-2"><MapPin size={16} /> 8622 112th St E Puyallup, WA 98373</div>
                 </div>
             </div>
-            <div className="flex justify-between items-center p-4 md:px-8">
+            <div className="flex justify-between items-center p-2 md:px-8">
                 <div className="flex items-center gap-2">
                     <img src="/logo.png" alt="Logo" className="h-14 w-50" />
                 </div>
@@ -32,10 +32,10 @@ export default function Navbar() {
                     {navItems.map((item, i) => (
                         item.items ? (
                             <DropdownMenu key={i}>
-                                <DropdownMenuTrigger className="flex items-center gap-1">
+                                <DropdownMenuTrigger className="flex cursor-pointer items-center gap-1">
                                     {item.label} <ChevronDown size={16} />
                                 </DropdownMenuTrigger>
-                                <DropdownMenuContent>
+                                <DropdownMenuContent className="bg-[#FEFBEA]">
                                     {item.items.map((sub, j) => (
                                         <DropdownMenuItem key={j}>{sub}</DropdownMenuItem>
                                     ))}
@@ -46,7 +46,7 @@ export default function Navbar() {
                         )
                     ))}
 
-                    <Button className="bg-white border border-[#3D7C46] text-[#3D7C46] rounded-full px-4 py-2">
+                    <Button className="bg-[#FEFBEA] border hover:bg-[#3D7C46] hover:text-white border-[#3D7C46] text-[#3D7C46] rounded-full px-4 py-2">
                         Schedule a Tour
                     </Button>
                 </div>
@@ -55,7 +55,7 @@ export default function Navbar() {
                 </button>
             </div>
             {open && (
-                <div className="md:hidden bg-white px-4 pb-4 text-[#4C4C4C]">
+                <div className="md:hidden bg-[#FEFBEA] min-h-screen px-4 pb-4 text-[#4C4C4C]">
                     {navItems.map((item, i) => (
                         <div key={i} className="border-b py-3">
                             {item.items ? (
@@ -75,7 +75,7 @@ export default function Navbar() {
                         </div>
                     ))}
 
-                    <Button className="bg-white border border-[#3D7C46] text-[#3D7C46] rounded-full w-full mt-4 py-2">
+                    <Button className="bg-[#FEFBEA] border border-[#3D7C46] text-[#3D7C46] rounded-full w-full mt-4 py-2">
                         Schedule a Tour
                     </Button>
                 </div>

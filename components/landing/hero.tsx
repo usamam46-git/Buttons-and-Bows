@@ -96,7 +96,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="w-full min-h-screen flex items-center justify-center bg-[#FEFBEA] px-6 py-3">
+    <section className="w-full min-h-screen flex items-center justify-center bg-[#FEFBEA] px-6 py-2">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 mb-4">

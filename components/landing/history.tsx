@@ -72,7 +72,7 @@ export default function History() {
         </div>
         <div className="p-1.5 border-2 border-dashed border-green-700/30 rounded-lg inline-block">
           <Button
-            className="text-white bg-[#518C5E] px-8 py-6 text-base rounded-md shadow-none hover:opacity-90 transition-opacity"
+            className="text-white bg-[#518C5E] hover:bg-[#3da754] px-8 py-6 text-base rounded-md shadow-none hover:opacity-90 transition-opacity"
           >
             More about us
           </Button>
